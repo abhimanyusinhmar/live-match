@@ -14,7 +14,7 @@ const items: LucideIcon[] = [LayoutGrid, Users, BarChart3, Goal, Shirt, Dumbbell
 
 export function Sidebar() {
   return (
-    <aside className="fixed left-0 top-0 z-20 flex h-screen w-18 flex-col items-center border-r border-[#e7d7b7] bg-[#fbf5e8] py-4">
+    <aside className="fixed left-0 top-0 z-20 flex h-screen w-18 flex-col items-center border-r border-[#e7d7b7] bg-[#fbf5e8] py-4 dark:border-white/10 dark:bg-[#243447]">
       <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#f2be2e] text-white shadow-sm">
         <LayoutGrid size={18} strokeWidth={2.2} />
       </div>
@@ -27,7 +27,7 @@ export function Sidebar() {
               className={
                 index === 3
                   ? 'flex h-9 w-9 items-center justify-center rounded-xl bg-white text-rose-500 shadow-sm'
-                  : 'flex h-9 w-9 items-center justify-center rounded-xl text-slate-500 hover:bg-white'
+                  : 'flex h-9 w-9 items-center justify-center rounded-xl text-slate-500 hover:bg-white dark:text-slate-300 dark:hover:bg-white/10'
               }
               aria-label={`sidebar-${index}`}
             >
